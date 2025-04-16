@@ -17,7 +17,7 @@ const Login = () => {
     .then(result=>{
       console.log(result.user)
       e.target.reset();
-      navigate('/home')
+      navigate('/')
     })
     .catch(error=>{
       console.log(error)
@@ -27,7 +27,7 @@ const Login = () => {
     signInWithGoogleHandler()
     .then(result=>{
       console.log(result.user)
-      navigate('/home')
+      navigate('/')
     })
     .catch(err=>{
       console.log('found error');
